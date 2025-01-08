@@ -384,12 +384,12 @@ class FlutterMultiselectState<T> extends State<FlutterMultiselect<T>> {
   }
 
   void _scrollToVisible() {
-    Future.delayed(const Duration(milliseconds: 300), () {
-      WidgetsBinding.instance.addPostFrameCallback((_) async {
-        final renderBox = context.findRenderObject() as RenderBox;
-        await Scrollable.of(context).position.ensureVisible(renderBox);
-      });
-    });
+    // Future.delayed(const Duration(milliseconds: 300), () {
+    //   WidgetsBinding.instance.addPostFrameCallback((_) async {
+    //     final renderBox = context.findRenderObject() as RenderBox;
+    //     await Scrollable.of(context).position.ensureVisible(renderBox);
+    //   });
+    // });
   }
 
   void selectAndClose(T data, [newString]) {
